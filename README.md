@@ -1,32 +1,8 @@
+# Example app showing update_all confusion
 
-# README
+In `app/models/user.rb`, the `set_all_seen` class method gathers all
+the users that have not ever been seen, and then runs `update_all` to
+set the current datetime.
 
-A newly generated Rails application with the following already baked in:
-
-* pry
-* rspec
-* factory girl
-* haml
-* twitter bootstrap
-* additional support for twitter bootstrap form building
-
-The database you've chosen has already been created.
-
-There is a static startup page at root.
-
-Tests are run with:
-
-    bin/rake # with no parameters
-
-or:
-
-    bin/rspec
-
-Information you should add here:
-
-* Ruby version
-* System dependencies
-* Configuration
-* Services (job queues, cache servers, search engines, etc.)
-* Deployment instructions
-
+After that, the object holding the collection is empty as it no longer
+satisfies it's original condition.
