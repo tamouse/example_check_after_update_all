@@ -88,3 +88,11 @@ relation works:
     un_unseen_users
   end
 ```
+
+## Contributors
+
+Thanks to `@chridal` on `#ruby@irc.freenode.net` for posing the
+problem.
+
+**HUGE** shout-out to `@sevenseacat` for pointing out the problem with
+using `.count` instead of `.size`.
