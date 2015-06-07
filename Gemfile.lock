@@ -92,6 +92,7 @@ GEM
     factory_girl_rails (4.5.0)
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
+    ffaker (2.0.0)
     fontawesome-rails (4.0.3.0)
       actionpack (>= 3.1)
       railties (>= 3.1)
@@ -249,7 +250,8 @@ DEPENDENCIES
   capistrano-rails
   coffee-rails (~> 4.1.0)
   database_cleaner
-  factory_girl_rails
+  factory_girl_rails (~> 4.0)
+  ffaker
   fontawesome-rails
   haml-rails
   html2haml
