@@ -14,6 +14,12 @@ RSpec.describe User, type: :model do
       expect(User.set_all_seen.count).to eq(20)
     end
 
-  end
+    it "returns 20 users as unseen" do
+      expect(User.set_all_seen_with_update.count).to eq(20)
+    end
 
+    it "returns 20 users as unseen" do
+      expect(User.set_all_seen_as_array.count).to eq(20)
+    end
+  end
 end
